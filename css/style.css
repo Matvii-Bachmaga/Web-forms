@@ -331,6 +331,14 @@ input[type=submit] {
     width: 32%;
 }
 
+.form-table td {
+    vertical-align: top;
+}
+
+.form-table tr:not(:nth-child(4)) td:first-child {
+    padding: 13px 0;
+}
+
 .form-table input[type=submit] {
     width: 339px;
 }
@@ -349,7 +357,6 @@ input[type=submit] {
     width: 221px;
     padding: 13px;
     border-radius: 3px;
-    background-color: #fff;
     border: 1px solid #ccc;
 }
 
@@ -369,7 +376,7 @@ input[type=submit] {
 }
 
 .test2 {
-    background: 200px center url(../img/arrow.png) no-repeat;
+    background: 185px center url(../img/arrow-two.png) no-repeat;
     appearance: none;
 }
 
@@ -491,7 +498,7 @@ input[type=checkbox]:checked+label::after {
     top: 50%;
     left: 2px;
     border-radius: 50%;
-    box-shadow:0 0 2.5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.5);
     background-color: #fff;
     transform: translateY(-50%);
     transition: all 0.3s ease;
