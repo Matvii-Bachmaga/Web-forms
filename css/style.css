@@ -43,11 +43,15 @@ h2 {
     display: block;
     margin-bottom: 10px;
     width: 331px;
-    padding: 10px 14px;
+    padding: 10px 15px;
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #ccc;
     font-weight: 400;
+}
+
+.test {
+    padding: 10px 14px;
 }
 
 .simple-form textarea,
@@ -366,13 +370,18 @@ input[type=submit] {
     margin-bottom: 15px;
 }
 
-.table-form .top-elements td label {
+.table-form tr td label {
     position: absolute;
     top: -20px;
     left: 0;
     font-size: 13px;
     color: #b3b3b3;
     font-weight: 400;
+}
+
+.top-elements td {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e9e9e9;
 }
 
 .test2 {
