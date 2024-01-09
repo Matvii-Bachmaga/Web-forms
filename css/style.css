@@ -50,10 +50,6 @@ h2 {
     font-weight: 400;
 }
 
-.test {
-    padding: 10px 14px;
-}
-
 .simple-form textarea,
 .form-table textarea {
     padding: 15px;
@@ -83,8 +79,9 @@ input[type=submit]:hover {
 }
 
 .test {
-    background: 307px center url(../img/arrow.png) no-repeat;
+    background: 300px center url(../img/arrow.png) no-repeat;
     appearance: none;
+    padding: 10px 14px;
 }
 
 .fixed-form {
@@ -302,7 +299,7 @@ input[type=submit] {
 }
 
 .form-table select {
-    background: 315px center url(../img/arrow.png) no-repeat;
+    background: 305px center url(../img/arrow.png) no-repeat;
     appearance: none;
     margin-bottom: 20px;
 }
@@ -329,6 +326,10 @@ input[type=submit] {
     font: 700 14px "Roboto";
     color: #fff;
     transition: all 0.3s ease;
+}
+
+.select-file:hover {
+    box-shadow:0px 2px 2.5px rgba(15, 40, 126, 0.35);
 }
 
 .form-table .text {
