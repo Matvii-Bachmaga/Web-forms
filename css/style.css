@@ -6,6 +6,7 @@
 
 body {
     padding-top: 75px;
+    padding-bottom: 75px;
     font-size: 14px;
     font-family: "Roboto";
 }
@@ -43,7 +44,7 @@ h2 {
     display: block;
     margin-bottom: 10px;
     width: 331px;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -81,7 +82,7 @@ input[type=submit]:hover {
 .test {
     background: 300px center url(../img/arrow.png) no-repeat;
     appearance: none;
-    padding: 10px 14px;
+    padding: 12px 14px;
 }
 
 .fixed-form {
@@ -89,6 +90,11 @@ input[type=submit]:hover {
     max-width: 310px;
     top: 21.8%;
     right: 15.5%;
+}
+
+input[type=radio] {
+    width: 15px;
+    height: 15px;
 }
 
 .fixed-form form {
@@ -251,13 +257,28 @@ input[type=submit] {
     left: 0;
     height: 70px;
     width: 70px;
-    background-image: url(../img/male.png);
+    background-image: url(../img/sprite.png);
+    background-position: -74px 0;
     transform: translateY(-50%);
 }
 
 .style-form .woman label::before {
-    background-image: url(../img/woman.png);
+    background-position: -73px 70px;
+
 }
+
+.style-form .male input:checked+label::before {
+    background-position: -1px 0;
+}
+
+.style-form .woman input:checked+label::before {
+    background-position: 0 70px;
+}
+
+.style-form .male input:checked+label,
+.style-form .woman input:checked+label {
+    color: #3e6aff;
+} 
 
 .style-form {
     display: flex;
@@ -304,9 +325,12 @@ input[type=submit] {
     margin-bottom: 20px;
 }
 
-.form-table input[type=radio],
-.table-form .h3 {
+.form-table input[type=radio] {
     margin-bottom: 25px;
+}
+
+.table-form .h3 {
+    margin-bottom: 45px;
 }
 
 .form-table td input[type=file] {
@@ -329,7 +353,7 @@ input[type=submit] {
 }
 
 .select-file:hover {
-    box-shadow:0px 2px 2.5px rgba(15, 40, 126, 0.35);
+    box-shadow: 0px 2px 2.5px rgba(15, 40, 126, 0.35);
 }
 
 .form-table .text {
@@ -354,6 +378,7 @@ input[type=submit] {
 
 .table-form td {
     position: relative;
+    padding-right: 10px;
 }
 
 .table-form td input,
@@ -366,8 +391,7 @@ input[type=submit] {
 }
 
 .table-form table {
-    margin: 0 -10px;
-    border-spacing: 10px;
+    border-collapse: collapse;
     margin-bottom: 15px;
 }
 
@@ -385,6 +409,10 @@ input[type=submit] {
     border-bottom: 1px solid #e9e9e9;
 }
 
+td:last-child {
+    padding-right: 0;
+}
+
 .test2 {
     background: 185px center url(../img/arrow-two.png) no-repeat;
     appearance: none;
@@ -395,7 +423,7 @@ input[type=submit] {
 }
 
 .table-form tr:nth-child(2) td {
-    padding: 40px 0 20px 0;
+    padding: 40px 0 40px 0;
 }
 
 .table-form tr:nth-child(2) td label {
@@ -416,7 +444,6 @@ input[type=submit] {
     font-weight: 700;
     text-decoration: none;
     width: 180px;
-    height: 43px;
     padding: 12.5px;
     border-radius: 3px;
     background-color: #fff;
@@ -445,6 +472,7 @@ input[type=submit] {
 
 input[type=checkbox] {
     width: 20px;
+    height: 16px;
     opacity: 0;
 }
 
@@ -472,10 +500,10 @@ input[type=checkbox]:checked+label::before {
 input[type=checkbox]:checked+label::after {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 5px;
     width: 7px;
-    height: 5px;
+    height: 4px;
     border: 2px solid #244dd7;
     border-right: none;
     border-top: none;
@@ -507,6 +535,7 @@ input[type=checkbox]:checked+label::after {
     height: 21px;
     top: 50%;
     left: 2px;
+    border: unset;
     border-radius: 50%;
     box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.5);
     background-color: #fff;
@@ -520,4 +549,40 @@ input[type=checkbox]:checked+label::after {
 
 .style-right input[type=checkbox]:checked+label::after {
     left: 22px;
+}
+
+.elements input[type=radio]+label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.elements input[type=radio]:checked+label::before {
+    border: 1px solid #3e6aff;
+}
+
+.elements input[type=radio]:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #3e6aff;
+    transform: translateY(-50%);
+}
+
+.elements input[type=radio] {
+    width: 16px;
+    height: 16px;
+    opacity: 0;
 }

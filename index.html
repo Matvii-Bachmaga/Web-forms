@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6 форм які розроблені різними способами</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -153,24 +155,23 @@
                         </tr>
                         <tr>
                             <td class="text">
-                                <label for="test2">Місто:</label>
+                                <label for="test3">Місто:</label>
                             </td>
                             <td>
-                                <select name="test" id="test2">
+                                <select name="test" id="test3">
                                     <option value="test1" selected disabled>Місто</option>
                                     <option value="test2">Хмельницький</option>
                                     <option value="test3">Львів</option>
                                     <option value="test4">Київ</option>
                                 </select>
                             </td>
-                            </td>
                         </tr>
                         <tr class="woman-man">
                             <td class="text">Стать:</td>
                             <td>
-                                <input type="radio" value="man" name="man" id="man">
+                                <input type="radio" value="man" name="sex" id="man">
                                 <label for="man">Чоловік</label>
-                                <input type="radio" value="woman" name="name" id="woman">
+                                <input type="radio" value="woman" name="sex" id="woman">
                                 <label for="woman">Жінка</label>
                             </td>
                             </td>
@@ -189,7 +190,7 @@
                                 <label for="comment">Коментарій:</label>
                             </td>
                             <td>
-                                <textarea class="comment" placeholder="Введіть текст повідомлення"
+                                <textarea id="comment" placeholder="Введіть текст повідомлення"
                                     maxlength="500"></textarea>
                             </td>
                         </tr>
@@ -227,7 +228,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <select name="test2" class="test2">
+                                    <select name="test2" id="test2" class="test2">
                                         <option value="country" selected disabled>Країна</option>
                                         <option value="USA">С.Ш.А</option>
                                         <option value="Spain">Іспанія</option>
@@ -242,16 +243,16 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="text" name="name" id="surname">
-                                    <label for="surname">Місто</label>
+                                    <input type="text" name="name" id="city">
+                                    <label for="city">Місто</label>
                                 </td>
                                 <td>
-                                    <input type="text" name="name" id="surname">
-                                    <label for="surname">Будинок</label>
+                                    <input type="text" name="name" id="house">
+                                    <label for="house">Будинок</label>
                                 </td>
                                 <td>
-                                    <input type="text" name="name" id="surname">
-                                    <label for="surname">Поштовий індекс</label>
+                                    <input type="text" name="name" id="index">
+                                    <label for="index">Поштовий індекс</label>
                                 </td>
                             </tr>
                         </tbody>
@@ -281,8 +282,8 @@
                             <label for="login">Логін</label>
                         </p>
                         <p class="login">
-                            <input type="password" name="name" id="password">
-                            <label for="password">Пароль</label>
+                            <input type="password" name="name" id="password-footer">
+                            <label for="password-footer">Пароль</label>
                         </p>
                         <a class="forget" href="#">Забули пароль?</a>
                         <li>
