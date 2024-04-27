@@ -48,7 +48,7 @@
                                 <label for="courier">Кур'єр</label>
                             </li>
                             <li>
-                                <input type="radio" name="name" value="self-pickup" id="self-pickup">
+                                <input type="radio" name="name" value="self-pickup" id="self-pickup" disabled>
                                 <label for="self-pickup">Самовивіз</label>
                             </li>
                         </ul>
@@ -62,7 +62,7 @@
                                 <label for="consent">Згідний з ПДВ 9%</label>
                             </li>
                             <li>
-                                <input type="checkbox" value="email" name="name" id="email">
+                                <input type="checkbox" value="email" name="name" id="email" disabled>
                                 <label for="email">Отримувати новини на ел. пошту</label>
                             </li>
                         </ul>
@@ -141,7 +141,7 @@
                                 <label for="name">ФІО:</label>
                             </td>
                             <td>
-                                <input type="text" name="name" id="name" placeholder="Введіть ім'я">
+                                <input type="text" name="name" id="name" placeholder="Введіть ім'я"  maxlength="70">
                             </td>
                         </tr>
                         <tr>
@@ -150,7 +150,7 @@
                             </td>
                             <td>
                                 <input type="password" name="name" id="password"
-                                    placeholder="Введіть не менше 6 символів">
+                                    placeholder="Введіть не менше 6 символів" maxlength="15">
                             </td>
                         </tr>
                         <tr>
@@ -167,8 +167,10 @@
                             </td>
                         </tr>
                         <tr class="woman-man">
-                            <td class="text">Стать:</td>
-                            <td>
+                            <td class="text">
+                                <label for="test">Стать:</label>
+                            </td>
+                            <td class="man-woman">
                                 <input type="radio" value="man" name="sex" id="man">
                                 <label for="man">Чоловік</label>
                                 <input type="radio" value="woman" name="sex" id="woman">
@@ -214,15 +216,15 @@
                         <tbody>
                             <tr class="top-elements">
                                 <td>
-                                    <input type="text" name="name" id="surname">
+                                    <input type="text" name="name" id="surname"  maxlength="70">
                                     <label for="surname">Прізвище та ім’я</label>
                                 </td>
                                 <td>
-                                    <input type="email" name="el-poshta" id="el">
+                                    <input type="email" name="el-poshta" id="el" maxlength="50">
                                     <label for="el">Ел. пошта</label>
                                 </td>
                                 <td>
-                                    <input type="tel" name="phone" id="phone">
+                                    <input type="tel" name="phone" id="phone" maxlength="15">
                                     <label for="phone">Телефон</label>
                                 </td>
                             </tr>
@@ -237,21 +239,21 @@
                                     <label for="test2">Країна</label>
                                 </td>
                                 <td class="address" colspan="2">
-                                    <input type="text" name="address" id="address">
+                                    <input type="text" name="address" id="address" maxlength="150">
                                     <label for="address">Адреса</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="text" name="name" id="city">
+                                    <input type="text" name="name" id="city" maxlength="50">
                                     <label for="city">Місто</label>
                                 </td>
                                 <td>
-                                    <input type="text" name="name" id="house">
+                                    <input type="text" name="name" id="house"  maxlength="50">
                                     <label for="house">Будинок</label>
                                 </td>
                                 <td>
-                                    <input type="text" name="name" id="index">
+                                    <input type="text" name="name" id="index"  maxlength="10">
                                     <label for="index">Поштовий індекс</label>
                                 </td>
                             </tr>
@@ -278,11 +280,11 @@
                     <ul>
                         <a class="cross" href="#"><img src="img/cross.png"></a>
                         <p class="login">
-                            <input type="text" name="name" id="login">
+                            <input type="text" name="name" id="login" maxlength="50">
                             <label for="login">Логін</label>
                         </p>
                         <p class="login">
-                            <input type="password" name="name" id="password-footer">
+                            <input type="password" name="name" id="password-footer" maxlength="20">
                             <label for="password-footer">Пароль</label>
                         </p>
                         <a class="forget" href="#">Забули пароль?</a>
