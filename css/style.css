@@ -18,7 +18,7 @@ body {
 }
 
 label:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .left-elments label {
@@ -26,12 +26,12 @@ label:hover {
     color: #1f222c;
 }
 
-.simple-form input:focus, 
-.right-elements li:not(:nth-child(5), :last-child) input:focus, 
-.table-form input:not([type=radio]):focus, 
-.simple-form textarea:focus, 
+.simple-form input:focus,
+.right-elements li:not(:nth-child(5), :last-child) input:focus,
+.table-form input:not([type=radio]):focus,
+.simple-form textarea:focus,
 .form-table textarea:focus,
-.form-table input:focus, 
+.form-table input:focus,
 .table-form table input:focus,
 .fixed-form input:focus {
     box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
@@ -321,7 +321,7 @@ input[type=submit] {
 .style-form .male input:checked+label,
 .style-form .woman input:checked+label {
     color: #3e6aff;
-} 
+}
 
 .style-form {
     display: flex;
@@ -337,10 +337,10 @@ input[type=submit] {
 }
 
 .style-right label {
-    font-family: "Roboto";
+    font-size: 14px;
     color: #1f222c;
     font-weight: 400;
-    font-family: normal;
+    font-family: "Roboto";
 }
 
 .form-table .h3,
@@ -527,6 +527,7 @@ input[type=checkbox] {
     width: 20px;
     height: 16px;
     opacity: 0;
+    background-color: #fff;
 }
 
 li {
@@ -543,6 +544,7 @@ input[type=checkbox]+label::before {
     height: 16px;
     border-radius: 3px;
     border: 1px solid #ccc;
+    background-color: #fff;
     transform: translateY(-50%);
 }
 
